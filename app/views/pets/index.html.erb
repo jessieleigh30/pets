@@ -1,6 +1,9 @@
 <h1> Pets </h1>
 <% @pets.each do |pets| %>
   <h2><%= pets.name %></h2>
-  <%= link_to 'Show Pets', pet_path(pets) %>
+  <%= link_to 'Show Pet', pet_path(pets) %>
+  <%= link_to 'Edit', edit_pet_path(pets.id) %>
+  <%= link_to 'Add', new_pet_path(pets) %>
+  
+  
 <% end %>
-s
