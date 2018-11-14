@@ -2,15 +2,23 @@
 <%= form_for @pet do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <br />
+  <br />
 
   <%= f.label :animal_type %>
   <%= f.text_field :animal_type %>
+  <br />
+  <br />
 
   <%= f.label :age %>
-  <%= f.text_area :age %>
+  <%= f.text_field :age %>
+  <br />
+  <br />
 
   <%= f.label :color %>
-  <%= f.text_area :color %>
+  <%= f.text_field :color %>
+  <br />
+  <br />
 
   <%= f.submit %>
 <% end %>

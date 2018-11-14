@@ -1,19 +1,19 @@
 <h1>Edit Pet</h1>
-<%= form_for @pets do |f| %>
+<%= form_for @pet do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <br />
   <br />
   <br />
   <%= f.label :animal_type %>
-  <%= f.text_area :animal_type %>
+  <%= f.text_field :animal_type %>
   <br />
   <br />
   <%= f.label :age %>
-  <%= f.text_area :age %>
+  <%= f.text_field :age %>
 
   <%= f.label :color %>
-  <%= f.text_area :color %>
+  <%= f.text_field :color %>
 
   <%= f.submit %>
 <% end %>
