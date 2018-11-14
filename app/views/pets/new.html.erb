@@ -1,0 +1,16 @@
+<h1>New Pet</h1>
+<%= form_for @pet do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :animal_type %>
+  <%= f.text_field :animal_type %>
+
+  <%= f.label :age %>
+  <%= f.text_area :age %>
+
+  <%= f.label :color %>
+  <%= f.text_area :color %>
+
+  <%= f.submit %>
+<% end %>
